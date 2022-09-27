@@ -3030,6 +3030,10 @@ input.input_form_select::-webkit-date-and-time-value {
   line-height: 1;
 }
 
+.window .keyvalue_label {
+  padding-bottom: 0.5625rem;
+}
+
 .keyvalue_label_text {
   white-space: nowrap;
   font-size: 0.875rem;
@@ -3059,8 +3063,6 @@ input.input_form_select::-webkit-date-and-time-value {
 }
 .keyvalue_data.type2 .keyvalue_box {
   vertical-align: middle;
-  position: relative;
-  top: 1px;
 }
 
 .keyvalue_wrap.type2 {
@@ -3114,7 +3116,7 @@ input.input_form_select::-webkit-date-and-time-value {
   display: inline-block;
   background: #404bd9;
   border-radius: 0.3125rem;
-  padding: 0.1875rem 0.5625rem 0.25rem;
+  padding: 0.25rem 0.5625rem 0.25rem;
   color: #fff;
   font-size: 0.8125rem;
   line-height: 1;
