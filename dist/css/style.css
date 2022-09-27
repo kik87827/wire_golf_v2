@@ -3219,5 +3219,8 @@ input.input_form_select {
   .small_phone_placeholder {
     display: block;
   }
+  .keyvalue_wrap {
+    display: block;
+  }
 }
 /*# sourceMappingURL=style.css.map */
