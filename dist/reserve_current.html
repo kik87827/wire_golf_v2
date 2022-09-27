@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="./css/style.css" />
+	<script src="./js/jquery-3.4.1.min.js"></script>
+	<script src="./js/dynamicListener.min.js"></script>
+	<script src="./js/swiper.min.js"></script>
+	<script src="./js/jquery-ui.js"></script>
+	<script src="./js/front.js"></script>
+	<title></title>
+</head>
+
+<body class="front_body">
+	<div class="page_wrap">
+		<header class="header_wrap">
+			<button class="btn_total"><span class="btn_total_in"></span><span class="hdtext">전체메뉴</span></button>
+			<h1 class="header_toptitle sub_type2"><span class="header_toptitle_text">예약현황</span></h1>
+			<div class="header_util_wrap">
+				<a href="#" class="btn_util ico_men"><span class="hdtext">Mypage</span></a>
+			</div>
+			<div class="mobile_mainmenu_zone">
+				<div class="mainmenu_dim"></div>
+				<div class="mobile_mainmenu_wrap">
+					<div class="mbutil_low">
+						<!-- 로그인 전 -->
+						<ul class="mbutil_hlist">
+							<li><a href="#" class="mbutil">로그인</a></li>
+							<li><a href="#" class="mbutil">회원가입</a></li>
+						</ul>
+						<!-- // 로그인 전 -->
+						<!-- 로그인 후 -->
+						<!-- <div class="mblog_after_w">
+				<p class="mblog_after_text"><span class="mblog_sym">홍길동</span>님 환영합니다.</p>
+			</div> -->
+						<!-- // 로그인 후 -->
+					</div>
+					<div class="mbmenu_low">
+						<div class="mbmenu_inwrap">
+							<ul class="mbmenu_vlist">
+								<li><a href="#" class="mbmenu_one">메뉴 01</a></li>
+								<li><a href="#" class="mbmenu_one">메뉴 02</a></li>
+								<li><a href="#" class="mbmenu_one">메뉴 03</a></li>
+								<li><a href="#" class="mbmenu_one">메뉴 04</a></li>
+								<li><a href="#" class="mbmenu_one">메뉴 05</a></li>
+							</ul>
+						</div>
+					</div>
+					<a href="#" class="btn_mbmenuclose"><span class="hdtext">메인메뉴 닫기</span></a>
+				</div>
+			</div>
+		</header>
+		<section class="mid_section sub_mid">
+			<div class="sort_vitem_zone">
+				<div class="sort_vitem">
+					<div class="sort_vlabel_row">
+						<p class="sort_vlabel">예약일자</p>
+					</div>
+					<div class="sort_vcontent_row">
+						<div class="sort_field_wrap">
+							<div class="sort_field_long">
+								<ul class="sort_input_list">
+									<li>
+										<div class="input_form_select_w">
+											<input type="date" class="input_form_select" id="start_select">
+											<label for="start_select" class="input_form_slabel">시작일</label>
+										</div>
+									</li>
+									<li class="sort_else"><span class="sort_elsetext">~</span></li>
+									<li>
+										<div class="input_form_select_w">
+											<input type="date" class="input_form_select" id="end_select">
+											<label for="end_select" class="input_form_slabel">종료일</label>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="sort_field_short"><a href="#" class="btn_sortsearch"><span class="hdtext">조회</span></a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="list_table_zone">
+				<div class="list_table_wrap">
+					<table class="list_table">
+						<colgroup>
+							<col />
+							<col style="width:20%" />
+							<col style="width:20%" />
+							<col style="width:20%" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th><span class="thtext">예약일</span></th>
+								<th><span class="thtext">고객명</span></th>
+								<th><span class="thtext">행사명</span></th>
+								<th><span class="thtext">인원</span></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><span class="tdtext">2022.09.25</span></td>
+								<td><span class="tdtext">김동희</span></td>
+								<td><span class="tdtext">생일</span></td>
+								<td><span class="tdtext">5</span></td>
+							</tr>
+							<tr>
+								<td><span class="tdtext">2022.09.25</span></td>
+								<td><span class="tdtext">김동희</span></td>
+								<td><span class="tdtext">생일</span></td>
+								<td><span class="tdtext">5</span></td>
+							</tr>
+							<tr>
+								<td><span class="tdtext">2022.09.25</span></td>
+								<td><span class="tdtext">김동희</span></td>
+								<td><span class="tdtext">워크샵</span></td>
+								<td><span class="tdtext">5</span></td>
+							</tr>
+							<tr>
+								<td><span class="tdtext">2022.09.25</span></td>
+								<td><span class="tdtext">김동희</span></td>
+								<td><span class="tdtext">생일</span></td>
+								<td><span class="tdtext">5</span></td>
+							</tr>
+							<!-- <tr>
+								<td class="nodata_td" colspan="4"><p class="nodata_para">데이터가 없습니다.</p></td>
+							</tr> -->
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="count_bottom_item_wrap">
+				<div class="count_bottom_item">
+					<span class="count_bottom_label">합계</span>
+					<span class="count_bottom_value">1250명</span>
+				</div>
+			</div>
+		</section>
+	</div>
+</body>
+
+</html>

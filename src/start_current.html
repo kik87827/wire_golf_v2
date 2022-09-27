@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('./include/head.html')
+<body class="front_body">
+	<div class="page_wrap">
+		<header class="header_wrap">
+			<button class="btn_total"><span class="btn_total_in"></span><span class="hdtext">전체메뉴</span></button>
+			<h1 class="header_toptitle sub_type2"><span class="header_toptitle_text">출발현황</span></h1>
+			<div class="header_util_wrap">
+				<a href="#" class="btn_util ico_men"><span class="hdtext">Mypage</span></a>
+			</div>
+			@@include('./include/mbmenu.html')
+		</header>
+		<section class="mid_section sub_mid">
+			<div class="sort_vitem_zone">
+				<div class="sort_vitem">
+					<div class="sort_vlabel_row"><p class="sort_vlabel">출발일자</p></div>
+					<div class="sort_vcontent_row">
+						<div class="sort_field_wrap">
+							<div class="sort_field_long">
+								<ul class="sort_input_list">
+									<li>
+										<div class="input_form_select_w">
+											<input type="date" class="input_form_select" id="start_select">
+											<label for="start_select" class="input_form_slabel">시작일</label>
+										</div>
+									</li>
+									<li class="sort_else"><span class="sort_elsetext">~</span></li>
+									<li>
+										<div class="input_form_select_w">
+											<input type="date" class="input_form_select" id="end_select">
+											<label for="end_select" class="input_form_slabel">종료일</label>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="sort_field_short"><a href="#" class="btn_sortsearch"><span class="hdtext">조회</span></a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="list_table_zone">
+				<div class="list_table_wrap">
+					<table class="list_table">
+						<colgroup>
+							<col />
+							<col style="width:20%" />
+							<col style="width:20%" />
+							<col style="width:20%" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th><span class="thtext">출발일</span></th>
+								<th><span class="thtext">고객명</span></th>
+								<th><span class="thtext">행사명</span></th>
+								<th><span class="thtext">인원</span></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><span class="tdtext">2022.09.25</span></td>
+								<td><span class="tdtext">김동희</span></td>
+								<td><span class="tdtext">생일</span></td>
+								<td><span class="tdtext">5</span></td>
+							</tr>
+							<tr>
+								<td><span class="tdtext">2022.09.25</span></td>
+								<td><span class="tdtext">김동희</span></td>
+								<td><span class="tdtext">생일</span></td>
+								<td><span class="tdtext">5</span></td>
+							</tr>
+							<tr>
+								<td><span class="tdtext">2022.09.25</span></td>
+								<td><span class="tdtext">김동희</span></td>
+								<td><span class="tdtext">워크샵</span></td>
+								<td><span class="tdtext">5</span></td>
+							</tr>
+							<tr>
+								<td><span class="tdtext">2022.09.25</span></td>
+								<td><span class="tdtext">김동희</span></td>
+								<td><span class="tdtext">생일</span></td>
+								<td><span class="tdtext">5</span></td>
+							</tr>
+							<!-- <tr>
+								<td class="nodata_td" colspan="4"><p class="nodata_para">데이터가 없습니다.</p></td>
+							</tr> -->
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="count_bottom_item_wrap">
+				<div class="count_bottom_item">
+					<span class="count_bottom_label">합계</span>
+					<span class="count_bottom_value">1250명</span>
+				</div>
+			</div>
+		</section>
+	</div>
+</body>
+</html>
