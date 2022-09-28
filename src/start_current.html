@@ -5,7 +5,7 @@
 	<div class="page_wrap">
 		<header class="header_wrap">
 			<button class="btn_total"><span class="btn_total_in"></span><span class="hdtext">전체메뉴</span></button>
-			<h1 class="header_toptitle sub_type2"><span class="header_toptitle_text">[휴양과 골프를 한번에!] 코타키나발루</span></h1>
+			<h1 class="header_toptitle sub_type2"><span class="header_toptitle_text">출발현황</span></h1>
 			<div class="header_util_wrap">
 				<a href="#" class="btn_util ico_men"><span class="hdtext">Mypage</span></a>
 			</div>
@@ -41,45 +41,61 @@
 			</div>
 			<div class="list_table_zone">
 				<div class="list_table_wrap">
-					<table class="list_table">
-						<colgroup>
-							<col />
-							<col style="width:20%" />
-							<col style="width:20%" />
-							<col style="width:20%" />
-						</colgroup>
+					<style>
+						/* ==== cell 조정 === */
+						/* pc */
+						#start_table .cell_wid_date{width:15%;}
+						#start_table .cell_wid_name{width:10%;}
+						#start_table .cell_wid_event{}
+						#start_table .cell_wid_count{width:12%;}
+
+						/* mobile */
+						@media(max-width:720px){
+							#start_table .cell_wid_date{width:24%;}
+							#start_table .cell_wid_name{width:16%;}
+							#start_table .cell_wid_event{}
+							#start_table .cell_wid_count{width:13%;}	
+						}
+					</style>
+					<table class="list_table" id="start_table">
 						<thead>
 							<tr>
-								<th><span class="thtext">출발일</span></th>
-								<th><span class="thtext">고객명</span></th>
-								<th><span class="thtext">행사명</span></th>
-								<th><span class="thtext">인원</span></th>
+								<th class="cell_wid_date"><span class="thtext">출발일</span></th>
+								<th class="cell_wid_name"><span class="thtext">고객명</span></th>
+								<th class="cell_wid_event"><span class="thtext">행사명</span></th>
+								<th class="cell_wid_count"><span class="thtext">인원</span></th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td><span class="tdtext">2022.09.25</span></td>
-								<td><span class="tdtext">김동희</span></td>
-								<td><span class="tdtext">생일</span></td>
-								<td><span class="tdtext">5</span></td>
+								<td class="cell_wid_date"><span class="tdtext">2022.09.25</span></td>
+								<td class="cell_wid_name"><span class="tdtext">김동희</span></td>
+								<td class="cell_wid_event align_type2"><a href="#" class="tdtext_link">[골프텔] 파타나 단독 3박5일</a></td>
+								<td class="cell_wid_count"><span class="tdtext">5</span></td>
 							</tr>
 							<tr>
-								<td><span class="tdtext">2022.09.25</span></td>
-								<td><span class="tdtext">김동희</span></td>
-								<td><span class="tdtext">생일</span></td>
-								<td><span class="tdtext">5</span></td>
+								<td class="cell_wid_date"><span class="tdtext">2022.09.25</span></td>
+								<td class="cell_wid_name"><span class="tdtext">김동희</span></td>
+								<td class="cell_wid_event align_type2"><a href="#" class="tdtext_link">[휴양과 골프를 한번에!] 코타키나발루</a></td>
+								<td class="cell_wid_count"><span class="tdtext">5</span></td>
 							</tr>
 							<tr>
-								<td><span class="tdtext">2022.09.25</span></td>
-								<td><span class="tdtext">김동희</span></td>
-								<td><span class="tdtext">워크샵</span></td>
-								<td><span class="tdtext">5</span></td>
+								<td class="cell_wid_date"><span class="tdtext">2022.09.25</span></td>
+								<td class="cell_wid_name"><span class="tdtext">김동희</span></td>
+								<td class="cell_wid_event align_type2"><a href="#" class="tdtext_link">[방콕/파타야5일] 파타야5성급호텔 18홀</a></td>
+								<td class="cell_wid_count"><span class="tdtext">5</span></td>
 							</tr>
 							<tr>
-								<td><span class="tdtext">2022.09.25</span></td>
-								<td><span class="tdtext">김동희</span></td>
-								<td><span class="tdtext">생일</span></td>
-								<td><span class="tdtext">5</span></td>
+								<td class="cell_wid_date"><span class="tdtext">2022.09.25</span></td>
+								<td class="cell_wid_name"><span class="tdtext">김동희</span></td>
+								<td class="cell_wid_event align_type2"><a href="#" class="tdtext_link">NO쇼핑 패키지 + 세부 솔레아 3박 숙박</a></td>
+								<td class="cell_wid_count"><span class="tdtext">5</span></td>
+							</tr>
+							<tr>
+								<td class="cell_wid_date"><span class="tdtext">2022.09.25</span></td>
+								<td class="cell_wid_name"><span class="tdtext">김동희</span></td>
+								<td class="cell_wid_event align_type2"><a href="#" class="tdtext_link">[다낭/호이안4일] #22년오픈#오션뷰#객실UP</a></td>
+								<td class="cell_wid_count"><span class="tdtext">5</span></td>
 							</tr>
 							<!-- <tr>
 								<td class="nodata_td" colspan="4"><p class="nodata_para">데이터가 없습니다.</p></td>
