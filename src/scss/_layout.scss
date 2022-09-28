@@ -13,7 +13,7 @@ html,
 .page_wrap:after{right:0;}
 .header_wrap{border-bottom:1px solid #cacaca;height:rem(80);position:sticky;top:0;left:0;display:flex;justify-content:center;z-index:20;background:#fff;}
 .header_toptitle{display:flex;align-items: center;justify-content: center;}
-.header_toptitle_text{display:inline-block;line-height:1;font-weight:700;color:#1c2271;font-size:rem(19)}
+.header_toptitle_text{line-height:1.3;font-weight:700;text-align:center;color:#1c2271;font-size:rem(19);display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow: hidden;}
 .btn_total{display:flex;align-items: center;justify-content: center;width:rem(60);height:100%;position:absolute;top:0;left:0;}
 .btn_total_in{display:block;height:2px;background:#000434;width:rem(21);position:relative;}
 .btn_total_in::before,
