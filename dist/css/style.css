@@ -1103,6 +1103,19 @@ html,
   white-space: nowrap;
   color: #fff;
 }
+.mbutil.type2 {
+  display: block;
+  color: #404bd9;
+  border-color: #404bd9;
+  text-align: center;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.mbmenu_else_wrap {
+  padding: 1.25rem;
+}
 
 .mblog_after_w {
   color: #fff;
@@ -2742,6 +2755,9 @@ input.form_input:focus {
 .sort_vitem_zone {
   padding: 1.125rem 1.125rem 1.0625rem;
 }
+.sort_vitem_zone.type2 {
+  padding-bottom: 0;
+}
 
 .sort_vlabel_row {
   margin-bottom: 0.625rem;
@@ -2819,8 +2835,11 @@ input.form_input:focus {
 .list_tbody,
 .list_thead {
   width: 100%;
-  table-layout: fixed;
   box-sizing: border-box;
+}
+
+.list_table {
+  border-collapse: separate;
 }
 
 .list_table th {
@@ -2836,6 +2855,26 @@ input.form_input:focus {
 
 .list_table td.align_type2 {
   text-align: left;
+}
+
+.list_table tr.has_spec_tr td {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.list_table tr.has_title_tr td {
+  padding: 0.3125rem 0.625rem 0.875rem;
+  text-align: left;
+}
+
+.list_table .wtype2 {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+
+.list_table .wtype2 * {
+  white-space: nowrap;
+  display: inline-block;
 }
 
 .list_thead th {
@@ -2868,6 +2907,22 @@ input.form_input:focus {
   display: inline-block;
   font-size: 0.875rem;
   color: #2b2b2b;
+}
+
+.list_tdpara {
+  display: inline-block;
+  font-size: 0.875rem;
+  color: #2b2b2b;
+}
+
+.list_tdpara {
+  display: inline-block;
+  font-size: 0.875rem;
+  color: #2b2b2b;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
 }
 
 .tdtext_link {
@@ -2906,6 +2961,40 @@ input.form_input:focus {
 }
 
 .count_bottom_value {
+  display: inline-block;
+  font-size: 1rem;
+  color: #000;
+  font-weight: 500;
+  padding: 0.21875rem;
+  line-height: 1;
+}
+
+.count_mid_item_wrap {
+  margin: 0.9375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.count_in_item {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #c8c8c8;
+  border-radius: 6.25rem;
+  justify-content: center;
+  padding: 0.75rem 1.5625rem 0.8125rem;
+  min-width: 5rem;
+}
+
+.count_in_label {
+  display: inline-block;
+  font-size: 0.875rem;
+  color: #333;
+  padding: 0.21875rem;
+  line-height: 1;
+}
+
+.count_in_value {
   display: inline-block;
   font-size: 1rem;
   color: #000;
