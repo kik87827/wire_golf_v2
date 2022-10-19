@@ -20,17 +20,19 @@
 							<div class="sort_field_long">
 								<ul class="sort_input_list">
 									<li>
-										<div class="input_form_select_w">
+										<!-- <div class="input_form_select_w">
 											<input type="date" class="input_form_select" id="start_select">
 											<label for="start_select" class="input_form_slabel">시작일</label>
-										</div>
+										</div> -->
+										<input type="text" class="input_calendar" placeholder="시작일">
 									</li>
 									<li class="sort_else"><span class="sort_elsetext">~</span></li>
 									<li>
-										<div class="input_form_select_w">
+										<!-- <div class="input_form_select_w">
 											<input type="date" class="input_form_select" id="end_select">
 											<label for="end_select" class="input_form_slabel">종료일</label>
-										</div>
+										</div> -->
+										<input type="text" class="input_calendar" placeholder="종료일">
 									</li>
 								</ul>
 							</div>
@@ -109,6 +111,20 @@
 				</div>
 			</div> -->
 		</section>
+		<script>
+			$(function(){
+				$(".input_calendar").datepicker({
+					monthNamesShort: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+					dayNamesMin: ["일", "월", "화", "수", "목", "금", "토"],
+					changeMonth: true,
+					changeYear: true,
+					dateFormat: 'yy-mm-dd',
+					beforeShow(input,inst){
+						
+					}
+				});
+			});
+		</script>
 	</div>
 </body>
 </html>

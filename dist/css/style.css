@@ -1334,6 +1334,7 @@ html,
   width: 280px;
   z-index: 10000 !important;
   display: none;
+  font-size: 0.875rem;
 }
 
 .ui-datepicker .ui-datepicker-header {
@@ -1394,7 +1395,7 @@ html,
   width: 173px;
   text-align: center;
   font-size: 17px;
-  font-family: "nsr";
+  font-family: "Noto Sans KR";
 }
 
 .ui-datepicker .ui-datepicker-title:after {
@@ -1404,7 +1405,7 @@ html,
 }
 
 .ui-datepicker .ui-datepicker-title select {
-  font-size: 12px;
+  font-size: 14px;
   margin: 1px 0;
 }
 
@@ -1417,7 +1418,7 @@ html,
 
 .ui-datepicker table {
   width: 100%;
-  font-size: 12px;
+  font-size: 14px;
   border-collapse: collapse;
   margin: 0 0 0.4em;
 }
@@ -1545,7 +1546,7 @@ html,
 /* Component containers
 ----------------------------------*/
 .ui-widget {
-  font-family: "Noto Sans Korean";
+  font-family: "Noto Sans KR";
   font-size: 1em;
 }
 
@@ -1557,7 +1558,7 @@ html,
 .ui-widget select,
 .ui-widget textarea,
 .ui-widget button {
-  font-family: "Noto Sans Korean";
+  font-family: "Noto Sans KR";
   font-size: 1em;
 }
 
@@ -1588,9 +1589,9 @@ html,
 .ui-state-default,
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default {
-  font-family: "Noto Sans Korean";
+  font-family: "Noto Sans KR";
   color: #363636;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .ui-state-default a,
@@ -1622,10 +1623,6 @@ html,
   text-decoration: none;
 }
 
-.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
-  outline: 1px dashed #000;
-}
-
 .ui-state-active,
 .ui-widget-content .ui-state-active,
 .ui-widget-header .ui-state-active {
@@ -1651,14 +1648,14 @@ html,
 .ui-state-highlight,
 .ui-widget-content .ui-state-highlight,
 .ui-widget-header .ui-state-highlight {
-  background: #404374;
+  background: #4f46c6;
   color: #fff;
   border-radius: 100%;
   min-width: 8px;
   text-align: center;
   padding: 0;
   height: 32px;
-  line-height: 34px;
+  line-height: 31px;
   width: 32px;
   margin: 0 auto;
 }
@@ -1721,37 +1718,6 @@ html,
 .ui-icon {
   width: 16px;
   height: 16px;
-}
-
-.ui-icon,
-.ui-widget-content .ui-icon {
-  background-image: url("../images/jqueryui/ui-icons_444444_256x240.png");
-}
-
-.ui-widget-header .ui-icon {
-  background-image: url("../images/jqueryui/ui-icons_444444_256x240.png");
-}
-
-.ui-state-default .ui-icon {
-  background-image: url("../images/jqueryui/ui-icons_777777_256x240.png");
-}
-
-.ui-state-hover .ui-icon,
-.ui-state-focus .ui-icon {
-  background-image: url("../images/jqueryui/ui-icons_555555_256x240.png");
-}
-
-.ui-state-active .ui-icon {
-  background-image: url("../images/jqueryui/ui-icons_ffffff_256x240.png");
-}
-
-.ui-state-highlight .ui-icon {
-  background-image: url("../images/jqueryui/ui-icons_777620_256x240.png");
-}
-
-.ui-state-error .ui-icon,
-.ui-state-error-text .ui-icon {
-  background-image: url("../images/jqueryui/ui-icons_cc0000_256x240.png");
 }
 
 /* positioning */
@@ -2519,10 +2485,10 @@ html,
 }
 
 .ui-datepicker-title select {
-  font-family: "Malgun Gothic", "맑은 고딕", "malgunweb";
+  font-family: "Noto Sans KR";
   color: #333;
-  padding: 0 35px 2px 5px;
-  height: 23px;
+  padding: 0 20px 2px 5px;
+  height: 26px;
   box-sizing: border-box;
   min-width: 80px;
   border: 1px solid #bbbbbb;
@@ -3070,6 +3036,27 @@ input.input_form_select::-webkit-date-and-time-value {
   box-sizing: border-box;
   padding: 0 2.5rem 0 0.625rem;
   line-height: 1;
+}
+
+input.input_calendar {
+  height: 2.8125rem;
+  color: #2b2b2b;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.25rem;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  font-size: 0.875rem;
+  background: #fff url("../images/icon_calendar.png") no-repeat 100% 50%/2.6875rem auto;
+  line-height: 1;
+  padding: 0 2.625rem 0 0.625rem;
+  -webkit-appearance: none;
+  appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  border-radius: 0.25rem;
 }
 
 .visual_wrap {
